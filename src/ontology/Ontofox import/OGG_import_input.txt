@@ -1,0 +1,42 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/ecolo/OGG_import.owl
+
+[Source ontology]
+OGG
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OGG_0000000002 # gene
+http://purl.obolibrary.org/obo/OGG_0000000001 # genome
+http://purl.obolibrary.org/obo/OGG_0000000003 # gene disposition
+http://purl.obolibrary.org/obo/BFO_0000028 #three-dimensional spatial region
+
+#E. coli genes
+http://purl.obolibrary.org/obo/OGG_3000945006 #lacZ
+http://purl.obolibrary.org/obo/OGG_3000949083 #lacY
+http://purl.obolibrary.org/obo/OGG_3000945007 #lacI
+http://purl.obolibrary.org/obo/OGG_3000945674 #lacA
+http://purl.obolibrary.org/obo/OGG_3000947794 #rpoA
+http://purl.obolibrary.org/obo/OGG_3000948488 #rpoB
+http://purl.obolibrary.org/obo/OGG_3000948487 #rpoC
+http://purl.obolibrary.org/obo/OGG_3000947567 #rpoD
+http://purl.obolibrary.org/obo/OGG_3000948160 #rpoZ
+http://purl.obolibrary.org/obo/OGG_3000947867 #crp, ie, cap
+http://purl.obolibrary.org/obo/NCBITaxon_511145 #Escherichia coli str. K-12 substr. MG1655
+http://purl.obolibrary.org/obo/NCBITaxon_2 #Bacteria
+
+http://purl.obolibrary.org/obo/OGG_1000000002 #genome of Bacteria
+http://purl.obolibrary.org/obo/OGG_1000511145 #genome of K-12 MG1655
+http://purl.obolibrary.org/obo/OGG_1000001236 #genome of Gammaproteobacteria
+http://purl.obolibrary.org/obo/OGG_1000001224 #genome of Proteobacteria
+http://purl.obolibrary.org/obo/OGG_0000000010 #protein-coding gene disposion
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+
+[Source term retrieval setting]
+includeComputedIntermediates
+
+[Source annotation URIs]
+includeAllAxioms
+
+[Source annotation URIs to be excluded]
