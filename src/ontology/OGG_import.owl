@@ -1,0 +1,1541 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ecolo/OGG_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/ecolo/OGG_import.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ecolo/OGG_import.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000180">
+        <rdfs:label xml:lang="en">BFO CLIF specification label</rdfs:label>
+        <obo:IAO_0000119>Person:Alan Ruttenberg</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">Really of interest to developers only</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="en">Relates an entity in the ontology to the term that is used to represent it in the the CLIF specification of BFO2</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OGG_0000000015">
+        <rdfs:label xml:lang="en">organism NCBITaxon ID</rdfs:label>
+        <obo:IAO_0000117>Oliver He, Yue Liu</obo:IAO_0000117>
+        <obo:IAO_0000115>The NCBITaxon ontology ID of an organism.</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OGG_0000000018">
+        <rdfs:label xml:lang="en">type of gene</rdfs:label>
+        <obo:IAO_0000115>an annotation property that specifies the type of a gene</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OGG_0000000019">
+        <rdfs:label xml:lang="en">nomenclature status</rdfs:label>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>an annotation property that specifies a nomenclature status</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obfoundry.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">editor note</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000281</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">has curation status</obo:IAO_0000111>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">definition source</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232">
+        <rdfs:label xml:lang="en">curator note</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">20110707, MC: label update to term editor and definition modified accordingly. See http://code.google.com/p/information-artifact-ontology/issues/detail?id=115.</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">term editor</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">example</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000179">
+        <rdfs:label xml:lang="en">BFO OWL specification label</rdfs:label>
+        <obo:IAO_0000232 xml:lang="en">Really of interest to developers only</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="en">Relates an entity in the ontology to the name of the variable that is used to represent it in the code that generates the BFO OWL file from the lispy specification.</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/ncbitaxon#has_rank">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_rank</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A metadata relation between a class and its taxonomic rank (eg species, family)</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OGG_0000000007">
+        <rdfs:label xml:lang="en">NCBI LocusTag</rdfs:label>
+        <obo:IAO_0000115>the NCBI LocusTag name of a gene </obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Yue Liu</obo:IAO_0000117>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OGG_0000000009">
+        <rdfs:label xml:lang="en">modification date</rdfs:label>
+        <obo:IAO_0000117>Oliver He, Yue Liu</obo:IAO_0000117>
+        <obo:IAO_0000115>a date of content modification</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OGG_0000000029">
+        <rdfs:label xml:lang="en">has GO association</rdfs:label>
+        <obo:IAO_0000115>an annotation property that shows the GO information associated with a specific gene. </obo:IAO_0000115>
+        <rdfs:comment>YH: use the convention: 
+GO_ID (EC: xx; Qualifier: xx; PMID: xxxxx;)
+where GO_ID is a GO ID, EC is the Evidence Code, Qualifier is a specific association type, and PMID is a PubMed ID of a paper that supports the gene-GO association. </rdfs:comment>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OGG_0000000002"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OGG_0000000006">
+        <rdfs:label xml:lang="en">NCBI GeneID</rdfs:label>
+        <obo:IAO_0000117>Oliver He, Yue Liu</obo:IAO_0000117>
+        <obo:IAO_0000115>A GeneID in the NCBI Gene database </obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000601">
+        <rdfs:label xml:lang="en">has associated axiom(nl)</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000602">
+        <rdfs:label xml:lang="en">has associated axiom(fol)</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OGG_0000000030">
+        <rdfs:label xml:lang="en">has PubMed association</rdfs:label>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <rdfs:comment>YH: use the format: 
+PMID: pmid1, pmid2, ...
+where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
+        <obo:IAO_0000115>An annotation property that represents a gene&#39;s association with PubMed publication(s). </obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600">
+        <rdfs:label xml:lang="en">elucidation</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000051">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">has part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000052">
+        <rdfs:label xml:lang="en">inheres in at all times</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000083 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000083">
+        <rdfs:label xml:lang="en">occupies spatial region at some time</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000108 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000108">
+        <rdfs:label xml:lang="en">exists at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000123 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000123">
+        <rdfs:label xml:lang="en">has spatial occupant at some time</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000162 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000162">
+        <rdfs:label xml:lang="en">has disposition at all times</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000169 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000169">
+        <rdfs:label xml:lang="en">specifically depends on at some time</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000176 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000176">
+        <rdfs:label xml:lang="en">part of continuant at some time</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000178 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000178">
+        <rdfs:label xml:lang="en">has continuant part at some time</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000186 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000186">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">part of continuant at all times that whole exists</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000187 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000187">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">has continuant part at all times that part exists</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_0000000014 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OGG_0000000014">
+        <rdfs:label xml:lang="en">is genome of organism</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_0000000016 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OGG_0000000016">
+        <rdfs:label xml:lang="en">is gene of organism</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
+        <rdfs:label xml:lang="en">entity</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000108"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:BFO_0000179>entity</obo:BFO_0000179>
+        <obo:IAO_0000600 xml:lang="en">An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])</obo:IAO_0000600>
+        <obo:BFO_0000180>Entity</obo:BFO_0000180>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Entity doesn&#39;t have a closure axiom because the subclasses don&#39;t necessarily exhaust all possibilites. For example Werner Ceusters &#39;portions of reality&#39; include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, &#39;How to track absolutely everything&#39; at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf</obo:IAO_0000116>
+        <obo:IAO_0000112 xml:lang="en">Julius Caesar</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">Verdi’s Requiem</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the Second World War</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">your body mass index</obo:IAO_0000112>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
+        <rdfs:label xml:lang="en">continuant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <obo:IAO_0000602>(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] </obo:IAO_0000602>
+        <obo:IAO_0000600 xml:lang="en">A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (axiom label in BFO2 Reference: [008-002])</obo:IAO_0000600>
+        <obo:BFO_0000180>Continuant</obo:BFO_0000180>
+        <obo:BFO_0000179>continuant</obo:BFO_0000179>
+        <obo:IAO_0000602>(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] </obo:IAO_0000602>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Continuant doesn&#39;t have a closure axiom because the subclasses don&#39;t necessarily exhaust all possibilites. For example, in an expansion involving bringing in some of Ceuster&#39;s other portions of reality, questions are raised as to whether universals are continuants</obo:IAO_0000116>
+        <obo:IAO_0000601 xml:lang="en">if b is a continuant and if, for some t, c has_continuant_part b at t, then c is a continuant. (axiom label in BFO2 Reference: [126-001])</obo:IAO_0000601>
+        <obo:IAO_0000601 xml:lang="en">if b is a continuant and if, for some t, cis continuant_part of b at t, then c is a continuant. (axiom label in BFO2 Reference: [009-002])</obo:IAO_0000601>
+        <obo:IAO_0000601 xml:lang="en">if b is a material entity, then there is some temporal interval (referred to below as a one-dimensional temporal region) during which b exists. (axiom label in BFO2 Reference: [011-002])</obo:IAO_0000601>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
+        <rdfs:label xml:lang="en">independent continuant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000031"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000169"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000186"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000031"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000083"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000602>(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] </obo:IAO_0000602>
+        <obo:IAO_0000602>(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] </obo:IAO_0000602>
+        <obo:IAO_0000601 xml:lang="en">For any independent continuant b and any time t there is some spatial region r such that b is located_in r at t. (axiom label in BFO2 Reference: [134-001])</obo:IAO_0000601>
+        <obo:IAO_0000601 xml:lang="en">For every independent continuant b and time t during the region of time spanned by its life, there are entities which s-depends_on b during t. (axiom label in BFO2 Reference: [018-002])</obo:IAO_0000601>
+        <obo:BFO_0000179>ic</obo:BFO_0000179>
+        <obo:BFO_0000180>IndependentContinuant</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">a chair</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a heart</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a leg</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a molecule</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a spatial region</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an atom</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an orchestra.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an organism</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">the bottom right portion of a human torso</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the interior of your mouth</obo:IAO_0000112>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000006">
+        <rdfs:label xml:lang="en">spatial region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000123"/>
+                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000186"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000187"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000083"/>
+                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000602>(forall (x y t) (if (and (SpatialRegion x) (continuantPartOfAt y x t)) (SpatialRegion y))) // axiom label in BFO2 CLIF: [036-001] </obo:IAO_0000602>
+        <obo:BFO_0000180>SpatialRegion</obo:BFO_0000180>
+        <obo:IAO_0000602>(forall (x) (if (SpatialRegion x) (Continuant x))) // axiom label in BFO2 CLIF: [035-001] </obo:IAO_0000602>
+        <obo:BFO_0000179>s-region</obo:BFO_0000179>
+        <obo:IAO_0000600 xml:lang="en">A spatial region is a continuant entity that is a continuant_part_of spaceR as defined relative to some frame R. (axiom label in BFO2 Reference: [035-001])</obo:IAO_0000600>
+        <obo:IAO_0000601 xml:lang="en">All continuant parts of spatial regions are spatial regions. (axiom label in BFO2 Reference: [036-001])</obo:IAO_0000601>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Spatial regions do not participate in processes.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Spatial region doesn&#39;t have a closure axiom because the subclasses don&#39;t exhaust all possibilites. An example would be the union of a spatial point and a spatial line that doesn&#39;t overlap the point, or two spatial lines that intersect at a single point. In both cases the resultant spatial region is neither 0-dimensional, 1-dimensional, 2-dimensional, or 3-dimensional.</obo:IAO_0000116>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000008">
+        <rdfs:label xml:lang="en">temporal region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016">
+        <rdfs:label xml:lang="en">disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000186"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:BFO_0000179>disposition</obo:BFO_0000179>
+        <obo:BFO_0000180>Disposition</obo:BFO_0000180>
+        <obo:IAO_0000602>(forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002] </obo:IAO_0000602>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Dispositions exist along a strength continuum. Weaker forms of disposition are realized in only a fraction of triggering cases. These forms occur in a significant number of cases of a similar type [89</obo:IAO_0000116>
+        <obo:IAO_0000601 xml:lang="en">If b is a realizable entity then for all t at which b exists, b s-depends_on some material entity at t. (axiom label in BFO2 Reference: [063-002])</obo:IAO_0000601>
+        <obo:IAO_0000112 xml:lang="en">an atom of element X has the disposition to decay to an atom of element Y</obo:IAO_0000112>
+        <obo:IAO_0000600 xml:lang="en">b is a disposition means: b is a realizable entity &amp; b’s bearer is some material entity &amp; b is such that if it ceases to exist, then its bearer is physically changed, &amp; b’s realization occurs when and because this bearer is in some special physical circumstances, &amp; this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])</obo:IAO_0000600>
+        <obo:IAO_0000112 xml:lang="en">certain people have a predisposition to colon cancer</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">children are innately disposed to categorize objects in certain ways.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the cell wall is disposed to filter chemicals in endocitosis and exocitosis</obo:IAO_0000112>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
+        <rdfs:label xml:lang="en">realizable entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000186"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000602>(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] </obo:IAO_0000602>
+        <obo:BFO_0000180>RealizableEntity</obo:BFO_0000180>
+        <obo:IAO_0000601 xml:lang="en">All realizable dependent continuants have independent continuants that are not spatial regions as their bearers. (axiom label in BFO2 Reference: [060-002])</obo:IAO_0000601>
+        <obo:IAO_0000600 xml:lang="en">To say that b is a realizable entity is to say that b is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region and is of a type instances of which are realized in processes of a correlated type. (axiom label in BFO2 Reference: [058-002])</obo:IAO_0000600>
+        <obo:BFO_0000179>realizable</obo:BFO_0000179>
+        <obo:IAO_0000112 xml:lang="en">the disposition of this piece of metal to conduct electricity.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the disposition of your blood to coagulate</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the function of your reproductive organs</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the role of being a doctor</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the role of this boundary to delineate where Utah and Colorado meet</obo:IAO_0000112>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
+        <rdfs:label xml:lang="en">quality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
+        <rdfs:label xml:lang="en">specifically dependent continuant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000186"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000031"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000031"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+                            <owl:Class>
+                                <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000602>(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] </obo:IAO_0000602>
+        <obo:BFO_0000179>sdc</obo:BFO_0000179>
+        <obo:IAO_0000602>(iff (RelationalSpecificallyDependentContinuant a) (and (SpecificallyDependentContinuant a) (forall (t) (exists (b c) (and (not (SpatialRegion b)) (not (SpatialRegion c)) (not (= b c)) (not (exists (d) (and (continuantPartOfAt d b t) (continuantPartOfAt d c t)))) (specificallyDependsOnAt a b t) (specificallyDependsOnAt a c t)))))) // axiom label in BFO2 CLIF: [131-004] </obo:IAO_0000602>
+        <obo:IAO_0000112 xml:lang="en">Reciprocal specifically dependent continuants: the function of this key to open this lock and the mutually dependent disposition of this lock: to be opened by this key</obo:IAO_0000112>
+        <obo:IAO_0000116 xml:lang="en">Specifically dependent continuant doesn&#39;t have a closure axiom because the subclasses don&#39;t necessarily exhaust all possibilites. We&#39;re not sure what else will develop here, but for example there are questions such as what are promises, obligation, etc.</obo:IAO_0000116>
+        <obo:BFO_0000180>SpecificallyDependentContinuant</obo:BFO_0000180>
+        <obo:IAO_0000115 xml:lang="en">b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &amp;gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &amp;lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">b is a specifically dependent continuant = Def. b is a continuant &amp; there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])</obo:IAO_0000115>
+        <obo:IAO_0000112 xml:lang="en">of one-sided specifically dependent continuants: the mass of this tomato</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">of relational dependent continuants (multiple bearers): John’s love for Mary, the ownership relation between John and this statue, the relation of authority between John and his subordinates.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the disposition of this fish to decay</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the function of this heart: to pump blood</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the mutual dependence of proton donors and acceptors in chemical reactions [79</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the mutual dependence of the role predator and the role prey as played by two organisms in a given interaction</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the pink color of a medium rare piece of grilled filet mignon at its center</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the role of being a doctor</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the shape of this hole.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the smell of this portion of mozzarella</obo:IAO_0000112>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023">
+        <rdfs:label xml:lang="en">role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000028">
+        <rdfs:label xml:lang="en">three-dimensional spatial region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+        <obo:IAO_0000602>(forall (x) (if (ThreeDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [040-001] </obo:IAO_0000602>
+        <obo:BFO_0000179>3d-s-region</obo:BFO_0000179>
+        <obo:BFO_0000180>ThreeDimensionalSpatialRegion</obo:BFO_0000180>
+        <obo:IAO_0000600 xml:lang="en">A three-dimensional spatial region is a spatial region that is of three dimensions. (axiom label in BFO2 Reference: [040-001])</obo:IAO_0000600>
+        <obo:IAO_0000112 xml:lang="en">a cube-shaped region of space</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a sphere-shaped region of space,</obo:IAO_0000112>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
+        <rdfs:label xml:lang="en">generically dependent continuant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+        <rdfs:label xml:lang="en">material entity</rdfs:label>
+        <obo:IAO_0000602>(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] </obo:IAO_0000602>
+        <obo:BFO_0000179>material</obo:BFO_0000179>
+        <obo:BFO_0000180>MaterialEntity</obo:BFO_0000180>
+        <obo:IAO_0000602>(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] </obo:IAO_0000602>
+        <obo:IAO_0000600 xml:lang="en">A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. (axiom label in BFO2 Reference: [019-002])</obo:IAO_0000600>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Material entities (continuants) can preserve their identity even while gaining and losing material parts. Continuants are contrasted with occurrents, which unfold themselves in successive temporal parts or phases [60</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Object, Fiat Object Part and Object Aggregate are not intended to be exhaustive of Material Entity. Users are invited to propose new subcategories of Material Entity.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: ‘Matter’ is intended to encompass both mass and energy (we will address the ontological treatment of portions of energy in a later version of BFO). A portion of matter is anything that includes elementary particles among its proper or improper parts: quarks and leptons, including electrons, as the smallest particles thus far discovered; baryons (including protons and neutrons) at a higher level of granularity; atoms and molecules at still higher levels, forming the cells, organs, organisms and other material entities studied by biologists, the portions of rock studied by geologists, the fossils studied by paleontologists, and so on.Material entities are three-dimensional entities (entities extended in three spatial dimensions), as contrasted with the processes in which they participate, which are four-dimensional entities (entities extended also along the dimension of time).According to the FMA, material entities may have immaterial entities as parts – including the entities identified below as sites; for example the interior (or ‘lumen’) of your small intestine is a part of your body. BFO 2.0 embodies a decision to follow the FMA here.</obo:IAO_0000116>
+        <obo:IAO_0000601 xml:lang="en">Every entity which has a material entity as continuant part is a material entity. (axiom label in BFO2 Reference: [020-002])</obo:IAO_0000601>
+        <obo:IAO_0000112 xml:lang="en">a flame</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a forest fire</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a human being</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a hurricane</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a photon</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a puff of smoke</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a sea wave</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a tornado</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an aggregate of human beings.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an energy wave</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">an epidemic</obo:IAO_0000112>
+        <obo:IAO_0000601 xml:lang="en">every entity of which a material entity is continuant part is also a material entity. (axiom label in BFO2 Reference: [021-002])</obo:IAO_0000601>
+        <obo:IAO_0000112 xml:lang="en">the undetached arm of a human being</obo:IAO_0000112>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000141">
+        <rdfs:label xml:lang="en">immaterial entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000187"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000187"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Immaterial entities are divided into two subgroups:boundaries and sites, which bound, or are demarcated in relation, to material entities, and which can thus change location, shape and size and as their material hosts move or change shape or size (for example: your nasal passage; the hold of a ship; the boundary of Wales (which moves with the rotation of the Earth) [38, 7, 10</obo:IAO_0000116>
+        <obo:BFO_0000180>ImmaterialEntity</obo:BFO_0000180>
+        <obo:BFO_0000179>immaterial</obo:BFO_0000179>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1224 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1224">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proteobacteria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGG_1000001224"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GC_ID:11</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11321122</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11542017</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11837318</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:16280474</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proteobacteria</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">purple bacteria</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">purple bacteria and relatives</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">purple non-sulfur bacteria</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">purple photosynthetic bacteria</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">purple photosynthetic bacteria and relatives</oboInOwl:hasExactSynonym>
+        <ncbitaxon:has_rank rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_phylum"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1236 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1236">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gammaproteobacteria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1224"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGG_1000001236"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GC_ID:11</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gammaproteobacteria Garrity et al. 2005</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:16280474</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proteobacteria gamma subdivision</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purple bacteria, gamma subdivision</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">g-proteobacteria</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma proteobacteria</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma subdivision</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gamma subgroup</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <ncbitaxon:has_rank rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_class"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bacteria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGG_1000000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GC_ID:11</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monera</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10425795</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10425796</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10425797</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10490293</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10843050</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10939651</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10939673</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:10939677</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11211268</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11321083</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11321113</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11411719</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11540071</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11542017</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11542087</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:11760965</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:12054223</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:2112744</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:270744</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:8123559</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:8590690</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:9103655</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:9336922</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Procaryotae</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prokaryota</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prokaryotae</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bacteria</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">eubacteria</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">not Bacteria Haeckel 1894</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prokaryote</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prokaryotes</oboInOwl:hasRelatedSynonym>
+        <ncbitaxon:has_rank rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_superkingdom"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_511145 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_511145">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Escherichia coli str. K-12 substr. MG1655</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1236"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGG_1000511145"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Escherichia coli MG1655</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Escherichia coli str. K12 substr. MG1655</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Escherichia coli str. MG1655</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Escherichia coli strain MG1655</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GC_ID:11</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ncbi_taxonomy</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
+        <rdfs:label xml:lang="en">organism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGG_0000000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and &#39;other organisms&#39;)</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GROUP: OBI Biomaterial Branch</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Organism</obo:IAO_0000119>
+        <obo:IAO_0000112 xml:lang="en">animal</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">fungus</obo:IAO_0000112>
+        <obo:IAO_0000111 xml:lang="en">organism</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">plant</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">virus</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000121"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_0000000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_0000000001">
+        <rdfs:label xml:lang="en">genome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGG_0000000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Genome</obo:IAO_0000119>
+        <obo:IAO_0000119>Book: Eugene Nester, Denise Anderson, C. Evans Roberts, Jr., Microbiology (Companion Site): A Human Perspective, 7th Edition. Mcgraw Hill, October 18, 2011. ISBN-13: 978-0073375311</obo:IAO_0000119>
+        <obo:IAO_0000115>A genome is a material entity that represents the entirety of an organism&#39;s hereditary information. The genome includes both the genes and the non-coding sequences of the DNA and RNA.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_0000000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_0000000002">
+        <rdfs:label xml:lang="en">gene</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGG_0000000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>In addition to the coding regions (exons), a gene includes transcription-control regions and sometimes introns. Although the majority of genes encode proteins, some encode tRNAs, rRNAs, and other types of RNA.</rdfs:comment>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.ncbi.nlm.nih.gov/books/NBK21640/</obo:IAO_0000119>
+        <obo:IAO_0000115>A gene is a material entity that represents the entire DNA sequence required for synthesis of a functional protein or RNA molecule. </obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_0000000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_0000000003">
+        <rdfs:label xml:lang="en">gene disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000115>a disposition that a gene can be used as a blueprint for generating a new form of product such as protein. </obo:IAO_0000115>
+        <rdfs:comment>YH: According to NCBI Gene project, there are two gene types: unknown (0) , tRNA (1) , rRNA (2) , snRNA (3) , scRNA (4) , snoRNA  (5) , protein-coding (6) , pseudo  (7) , transposon  (8) , miscRNA  (9) , ncRNA (10) , other (255). Therefore, we have generated corresponding gene dispositions. Note that we don&#39;t use the term &quot;gene type&quot; here to differentiate the meanings of &quot;type&quot; and &quot;disposition&quot;. </rdfs:comment>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.ncbi.nlm.nih.gov/IEB/ToolBox/CPP_DOC/lxr/source/src/objects/entrezgene/entrezgene.asn </obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_0000000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_0000000010">
+        <rdfs:label xml:lang="en">protein-coding gene disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_0000000003"/>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.ncbi.nlm.nih.gov/IEB/ToolBox/CPP_DOC/lxr/source/src/objects/entrezgene/entrezgene.asn</obo:IAO_0000119>
+        <obo:IAO_0000115>a gene disposition that a gene can be used as a blueprint for generating a protein (i.e., a gene encodes for a protein). </obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_1000000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_1000000002">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genome of Bacteria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_0000000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGG_0000000014"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGG_2000000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:OGG_0000000015 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</obo:OGG_0000000015>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The genome of an organism of Bacteria</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yue Liu, Bin Zhao, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_1000001224 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_1000001224">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genome of Proteobacteria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_1000000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGG_2000001224"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGG_0000000014"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1224"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:OGG_0000000015 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1224</obo:OGG_0000000015>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The genome of an organism of Proteobacteria</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yue Liu, Bin Zhao, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_1000001236 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_1000001236">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genome of Gammaproteobacteria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_1000001224"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGG_2000001236"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGG_0000000014"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1236"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:OGG_0000000015 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1236</obo:OGG_0000000015>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The genome of an organism of Gammaproteobacteria</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yue Liu, Bin Zhao, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_1000511145 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_1000511145">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genome of Escherichia coli str. K-12 substr. MG1655</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_1000001236"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGG_2000511145"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGG_0000000014"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_511145"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:OGG_0000000015 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">511145</obo:OGG_0000000015>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The genome of an organism of Escherichia coli str. K-12 substr. MG1655</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yue Liu, Bin Zhao, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_2000000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_2000000002">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gene of Bacteria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_0000000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGG_0000000016"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:OGG_0000000015 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</obo:OGG_0000000015>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A gene of an organism of Bacteria</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yue Liu, Bin Zhao, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_2000001224 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_2000001224">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gene of Proteobacteria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_2000000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGG_0000000016"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1224"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:OGG_0000000015 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1224</obo:OGG_0000000015>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A gene of an organism of Proteobacteria</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yue Liu, Bin Zhao, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_2000001236 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_2000001236">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gene of Gammaproteobacteria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_2000001224"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGG_0000000016"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1236"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:OGG_0000000015 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1236</obo:OGG_0000000015>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A gene of an organism of Gammaproteobacteria</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yue Liu, Bin Zhao, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_2000511145 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_2000511145">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gene of Escherichia coli str. K-12 substr. MG1655</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_2000001236"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGG_0000000016"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_511145"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:OGG_0000000015 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">511145</obo:OGG_0000000015>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A gene of an organism of Escherichia coli str. K-12 substr. MG1655</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yue Liu, Bin Zhao, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_2060511145 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_2060511145">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein-coding gene of Escherichia coli str. K-12 substr. MG1655</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_2000511145"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGG_0000000010"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:OGG_0000000015 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">511145</obo:OGG_0000000015>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A gene of Escherichia coli str. K-12 substr. MG1655 that has a protein-coding gene disposition</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bin Zhao, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000945006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_3000945006">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lacZ</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">945006</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECK0341</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EcoGene:EG10527</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_0005737; GO_0016052</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JW0335</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID: 97290; 97293; 97294; 97295; 97296; 97297; 97298; 100348; 103569; 103570; 105358; 149795; 169231; 170282; 323855; 393832; 412841; 415304; 1091637; 1093175; 1350782; 1400176; 1507218; 1584025; 1702782; 1710346; 1906601; 1969405; 2481494; 2547970; 3286645; 4159772; 4369966; 4560198; 4560199; 4562709; 4563980; 4574705; 4591949; 4599764; 4721625; 4860427; 4865113; 4876923; 4886293; 4896019; 4896141; 4897462; 4897463; 4897793; 4899399; 4914567; 4918568; 4947657; 4958494; 4961803; 4962166; 4967206; 4984073; 5327277; 5332199; 5337175; 5338490; 5338856; 5341533; 5912357; 6165380; 6198527; 6246435; 6307829; 6313347; 6374620; 6403507; 6411710; 6417139; 6420154; 6434747; 6444453; 6769437; 6769904; 6769907; 6787055; 6787056; 6790520; 6811114; 6814483; 7510674; 7542588; 7761393; 8008071; 8547350; 8636052; 8990294; 9278503; 9548771; 9707593; 10320351; 10463179; 10913980; 11045615; 11135194; 11310566; 11518535; 11732897; 12446654; 12578395; 12719218; 12743100; 12776212; 12853150; 12881519; 12914674; 13638015; 14022758; 14304855; 14324815; 14572658; 14621996; 14634707; 14727089; 14784466; 14848081; 14973486; 15004283; 15020459; 15058986; 15060622; 15064770; 15118087; 15123418; 15135537; 15153766; 15158272; 15189056; 15337456; 15342537; 15357303; 15378765; 15459289; 15547274; 15550983; 15563718; 15576807; 15596728; 15597544; 15849697; 15947133; 15950161; 15950164; 16013474; 16049495; 16095606; 16240716; 16245700; 16263707; 16397293; 16427605; 16432263; 16467149; 16541077; 16602820; 16606699; 16648266; 16755024; 16934214; 16989085; 17021880; 17038332; 17126292; 17209030; 17401371; 17490688; 17590077; 17600062; 17626303; 17965164; 18007029; 18426771; 18588236; 18755071; 18769886; 18848570; 18924101; 18955986; 19045824; 19229596; 19472413; 19515932; 19684875; 19768521; 19936901; 21102659; 21441210; 22101250; 22155115; 22286993; 22446164</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b0344</obo:OGG_0000000007>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">beta-D-galactosidase</dc:description>
+        <obo:OGG_0000000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000945007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_3000945007">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lacI</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">945007</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNA-binding transcriptional repressor</dc:description>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECK0342</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EcoGene:EG10525</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_0005737; GO_0016052; GO_0016564</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JW0336</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID: 105358; 323217; 337294; 346569; 355891; 360044; 1107032; 2010911; 2040302; 2166165; 2178920; 2663473; 2742823; 2826131; 3064080; 3186699; 3286877; 3732806; 4554534; 4557395; 4571224; 4594037; 4599764; 4604800; 4860427; 4870861; 4876923; 4886293; 4896019; 4897462; 4899399; 4932654; 4935786; 4961803; 4995685; 5321900; 5327277; 5330222; 5332199; 5337175; 5338490; 5338856; 5340246; 5341533; 6288696; 6769907; 6770231; 6801019; 8046748; 8568874; 8599752; 8638105; 8683581; 8984647; 8984648; 8993340; 8995519; 9278503; 9701798; 10562559; 10647179; 10659856; 10700279; 10842304; 10899129; 11373298; 11580238; 11601849; 11805323; 11910022; 12029133; 12065400; 12719218; 12743100; 12818201; 14636069; 14725772; 14973486; 15020459; 15063131; 15189056; 15256661; 15256668; 15262914; 15262915; 15455074; 15550983; 15563718; 15866745; 15867195; 15950160; 15950164; 16013474; 16085773; 16094693; 16303869; 16397293; 16482159; 16573677; 16606699; 16648266; 16684993; 16785444; 16858726; 16877514; 16920827; 17049362; 17103112; 17205140; 17263689; 17376875; 17490688; 17506520; 17525339; 17543441; 17543986; 17553830; 17590077; 17709175; 17822838; 17965164; 17991990; 18065471; 18233697; 18426771; 18848570; 18927393; 18959464; 19004002; 19171063; 19269243; 19368358; 19450607; 19502396; 19520056; 19536156; 19540845; 19571369; 19631220; 19699751; 19883663; 19889751; 21085639; 21928765; 22157000; 22594825; 22723426; 23658223</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b0345</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000945674 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_3000945674">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lacA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">945674</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECK0339</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EcoGene:EG10524</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_0005737; GO_0016052</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JW0333</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID: 789355; 1702782; 1710346; 3901000; 3922433; 4630409; 4860427; 4865113; 4876923; 4886293; 4896019; 4897462; 4897463; 4914567; 4961803; 5327277; 5332199; 5337175; 5338490; 5338856; 5341533; 6372544; 6444453; 6995445; 7592843; 9278503; 11937062; 12743100; 12949114; 14085376; 14973486; 15123418; 15189056; 15357303; 15950163; 16013474; 16397293; 16843895; 16862137; 17208523; 17897839; 18027921; 18426771</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b0342</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein-coding</obo:OGG_0000000018>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thiogalactoside acetyltransferase</dc:description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000947567 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_3000947567">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rpoD</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">947567</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECK3057</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EcoGene:EG10896</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_0005737</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JW3039</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID: 159460; 169227; 325555; 338607; 340455; 363714; 363715; 368586; 392226; 392509; 1092683; 1095419; 1097397; 1102539; 1102540; 1103827; 1103828; 1107814; 1530937; 1547884; 1565647; 1597408; 1602496; 1643661; 1645180; 1741250; 1745227; 1832149; 1856861; 1856862; 1989882; 2201684; 2203338; 2659595; 2661827; 2661828; 2671653; 2687277; 2931721; 2971662; 2999864; 3058205; 3194400; 3280024; 3299002; 3308845; 3328858; 3329725; 3543015; 3902078; 4343249; 4347245; 4552924; 4552925; 4620020; 4882047; 4890763; 4890764; 4904090; 4918843; 4943548; 6101086; 6186393; 6206376; 6222240; 6262323; 6269063; 6273443; 6343786; 6355770; 6371712; 6380764; 6391956; 6448843; 6988671; 6993850; 7007812; 7012116; 7035833; 7476160; 7476180; 7557408; 7588636; 7651320; 7685758; 8107088; 8289270; 8345519; 8349564; 8798775; 8799117; 8808934; 8858155; 9023229; 9048558; 9081674; 9159471; 9172641; 9201947; 9278503; 9442027; 9520378; 9571040; 9642176; 9767572; 9813048; 9830052; 9922176; 10384292; 10411885; 10493811; 10572130; 10625443; 10630996; 10734058; 10764785; 10781573; 10818095; 10856246; 10947847; 10982868; 11007979; 11118218; 11251833; 11258875; 11274153; 11282466; 11292807; 11292818; 11349126; 11439189; 11511357; 11525730; 11591686; 11703665; 11805041; 11807081; 11976292; 12368244; 12421813; 12477716; 12522214; 12627170; 12756230; 12782316; 12801925; 12820881; 12820974; 12829377; 12851391; 13563462; 13563463; 14529615; 14621989; 14630944; 14638424; 14687566; 14712643; 14759508; 14962387; 14982639; 14988563; 15122345; 15122346; 15178453; 15257291; 15262935; 15289476; 15342598; 15449955; 15465046; 15466047; 15469913; 15491604; 15507429; 15550566; 15576349; 15596728; 15598612; 15606780; 15612564; 15612932; 15626761; 15650048; 15670592; 15674021; 15680325; 15731103; 15738402; 15761057; 15793584; 15817381; 15882415; 15941982; 15943816; 15950164; 15978618; 16166539; 16169843; 16204188; 16285917; 16285918; 16301522; 16381890; 16397293; 16475805; 16545925; 16581837; 16603195; 16606699; 16677393; 16690607; 16777598; 16818608; 16888625; 16892065; 16950920; 16980472; 16996538; 17012380; 17081994; 17096598; 17157257; 17187058; 17189297; 17207814; 17268549; 17272300; 17302812; 17332752; 17351046; 17470797; 17507375; 17535803; 17567604; 17681541; 17940097; 18155246; 18191943; 18208528; 18237749; 18281402; 18287032; 18333883; 18440978; 18485078; 18574242; 18852508; 18976666; 19076234; 19139410; 19150431; 19443781; 19538446; 19538447; 19574956; 19649256; 19833764; 19833768; 19838295; 19847776; 19903881; 20595001; 21143318; 21195716; 21396442; 21398630; 21451247; 21829166; 21908667; 22098235; 22465792; 22605342; 23118417; 23389035; 23667906</obo:OGG_0000000030>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNA polymerase, sigma 70 (sigma D) factor</dc:description>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alt</obo:IAO_0000118>
+        <obo:OGG_0000000007 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b3067</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000947794 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_3000947794">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rpoA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">947794</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECK3282</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EcoGene:EG10893</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_0005737</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JW3257</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID: 323055; 387258; 387752; 450114; 1095419; 1101267; 1108010; 1281887; 1316869; 1384037; 1452017; 1593618; 1593619; 1629175; 1646077; 1651394; 1651395; 1698125; 1702475; 1741250; 1745227; 1779761; 1833768; 1835546; 1870123; 1920407; 1938946; 1985624; 2017366; 2192861; 2203338; 2235479; 2259628; 2409292; 2439694; 2464590; 2479752; 2482070; 2661827; 2668539; 2671751; 2687277; 2693737; 2722774; 2821285; 2932430; 2961367; 2989779; 3078109; 3147371; 3301003; 3308880; 3328858; 3550697; 3882710; 3894886; 3898021; 3960716; 4562312; 4882047; 4896016; 4986890; 6091902; 6098691; 6154696; 6154799; 6156091; 6159577; 6165380; 6222285; 6223930; 6285307; 6286146; 6339503; 6344016; 6378665; 6379605; 6573669; 6951162; 6996702; 7000759; 7008032; 7015808; 7045809; 7490753; 7491496; 7514589; 7537637; 7539140; 7685823; 7736587; 7844812; 8047884; 8087855; 8107083; 8248780; 8284224; 8377190; 8420002; 8430111; 8431948; 8479900; 8503010; 8521466; 8524639; 8598198; 8816769; 8878045; 9012661; 9050843; 9094712; 9112442; 9135123; 9144176; 9182561; 9201947; 9278503; 9298646; 9570142; 9642176; 9657722; 9665887; 9702191; 9765211; 9765569; 9790843; 9794753; 9843952; 9878357; 9890901; 9918716; 9922176; 10049799; 10079088; 10198440; 10200263; 10213678; 10377392; 10449412; 10471732; 10572130; 10639128; 10741971; 10747024; 10821700; 10920271; 10972822; 10986259; 11040219; 11118218; 11238372; 11326100; 11571305; 11600705; 11904365; 11914359; 11917006; 11985624; 11988528; 12202833; 12370445; 12484772; 12730602; 12756230; 12801925; 12820974; 12829377; 12834354; 12845423; 12851391; 12954227; 12970184; 13704191; 13895983; 14526030; 14530288; 14604986; 14622598; 14634670; 14759508; 14962387; 14982626; 14982639; 14988563; 15093137; 15178453; 15449955; 15458404; 15465042; 15469913; 15491604; 15596728; 15606780; 15626760; 15626761; 15670592; 15674021; 15680325; 15690043; 15716444; 15738402; 15852340; 15950164; 16088348; 16169843; 16185714; 16246367; 16284617; 16301522; 16391237; 16397293; 16405998; 16581837; 16621791; 16690607; 16707692; 16738554; 16846227; 16857589; 16858726; 16859838; 16876197; 16888625; 16934488; 17012275; 17012380; 17021309; 17157257; 17187058; 17207814; 17290289; 17389649; 17470797; 17507375; 17960736; 18852508; 19251886; 19903881; 20097853; 20512976; 22157000; 22967981</obo:OGG_0000000030>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNA polymerase, alpha subunit</dc:description>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b3295</obo:OGG_0000000007>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pez</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phs</obo:IAO_0000118>
+        <obo:OGG_0000000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sez</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000947867 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_3000947867">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crp</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">947867</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECK3345</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EcoGene:EG10164</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_0005737; GO_0016563; GO_0016564</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JW5702</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID: 173710; 186698; 217515; 230407; 1321815; 1328816; 1332042; 1379686; 1618821; 1637832; 1645842; 1646077; 1653449; 1715982; 1848302; 2136332; 2167178; 2173826; 2193024; 2231717; 2425359; 2454912; 2543955; 2557589; 2651862; 2668121; 2828639; 2845936; 2851497; 3009405; 3016284; 3027042; 3036034; 3051048; 3053643; 3333845; 3525518; 3896929; 4317918; 4320461; 4355492; 4371357; 4558324; 4583241; 4604054; 5338490; 6245052; 6261152; 6271171; 6273380; 6280140; 6280141; 6286624; 6297782; 6323997; 6343617; 6392569; 7040431; 7041121; 7494474; 7518773; 7551052; 7662661; 7925296; 7966284; 7966285; 8230210; 8392187; 8394345; 8394684; 8394979; 8521047; 8573570; 8604346; 8613984; 8636052; 8729576; 8735277; 8736525; 8757802; 8816767; 8969182; 8978616; 9016561; 9057829; 9076723; 9086266; 9096308; 9133663; 9155036; 9157253; 9215632; 9278503; 9305953; 9371449; 9371775; 9372184; 9440505; 9457881; 9582281; 9624689; 9628879; 9749675; 9750230; 9813115; 9822815; 10191387; 10231489; 10320351; 10320475; 10320573; 10322165; 10388556; 10550204; 10564497; 10601034; 10601201; 10601207; 10715008; 10760165; 10760178; 10760580; 10766824; 10852886; 10856246; 10966109; 10986267; 11073923; 11124031; 11124966; 11152685; 11282467; 11343786; 11407111; 11532151; 11532153; 11574674; 11724533; 11742992; 11750821; 11890200; 11894929; 11904295; 11969416; 11972323; 11988530; 12023077; 12029060; 12202833; 12391883; 12446650; 12475225; 12475242; 12551924; 12591879; 12653996; 12667067; 12667072; 12718521; 12818201; 12881519; 12923087; 12962328; 14530288; 14617649; 14638413; 14651625; 14963488; 14970383; 14983022; 15035009; 15049691; 15060041; 15063844; 15066043; 15096034; 15102444; 15150239; 15248748; 15336562; 15380559; 15385551; 15491604; 15520470; 15659676; 15673715; 15690043; 15720385; 15743955; 15767782; 15838044; 15952780; 16141204; 16166533; 16260780; 16261196; 16301522; 16397293; 16401068; 16406067; 16407219; 16427082; 16453452; 16467149; 16503665; 16646826; 16738553; 16782261; 16814929; 16885453; 16885462; 16934214; 17068078; 17073754; 17087497; 17122336; 17158453; 17158559; 17158705; 17187058; 17233899; 17284458; 17376875; 17505875; 17513476; 17559662; 17608696; 17618229; 17630973; 17655202; 17675376; 17763923; 17854493; 17895580; 18003133; 18223071; 18282111; 18297445; 18328555; 18338329; 18359269; 18456811; 18499056; 18503189; 18571198; 18619465; 18628769; 18641039; 18653536; 18723630; 18787713; 18790862; 18852508; 18955986; 18978044; 19019153; 19033675; 19054084; 19060147; 19091747; 19105805; 19230236; 19263505; 19264798; 19309730; 19359484; 19372151; 19439203; 19502395; 19633076; 19703305; 19741253; 19772633; 19805344; 19805906; 19843224; 19849850; 19854903; 19893610; 19903881; 19924217; 20028978; 20445248; 21216994; 21343356; 21542864; 21889533; 21926233; 22752906; 22967981; 23029459; 23475967; 23695578</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b3357</obo:OGG_0000000007>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cAMP-activated global transcription factor, mediator of catabolite repression</dc:description>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cap</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">csm</obo:IAO_0000118>
+        <obo:OGG_0000000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000948160 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_3000948160">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rpoZ</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">948160</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECK3639</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EcoGene:EG10899</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_0005737</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JW3624</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID: 376516; 1544582; 1711031; 1938888; 2152188; 2549050; 2646273; 2685748; 3549461; 7686882; 8218187; 9278503; 9288911; 9499408; 9868784; 10542069; 10625443; 11158566; 11531998; 12727285; 14988563; 15004283; 15449955; 15469913; 15950164; 16204187; 16397293; 16908155; 17187058; 17233676; 18272182; 19903881; 19963062; 21810966; 22138225</obo:OGG_0000000030>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNA polymerase, omega subunit</dc:description>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b3649</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">spoS</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000948487 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_3000948487">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rpoC</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">948487</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECK3979</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EcoGene:EG10895</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_0005737</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JW3951</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID: 116224; 159290; 321939; 325370; 331076; 387258; 450114; 765746; 1095419; 1104861; 1281887; 1316869; 1384037; 1408790; 1593618; 1593619; 1651394; 1651395; 1698125; 1702475; 1741250; 1745227; 1825852; 1835546; 1870123; 2017366; 2192861; 2203338; 2259628; 2285427; 2409292; 2439694; 2443706; 2464590; 2479752; 2482070; 2661827; 2664452; 2668539; 2671751; 2687277; 2693737; 2722774; 2821285; 2961367; 3078109; 3301003; 3308880; 3328858; 3550697; 3881415; 3882710; 3898021; 3960716; 4562312; 4599760; 4601245; 4882047; 4896016; 4986890; 6091902; 6098691; 6156091; 6158044; 6159577; 6160369; 6165380; 6223930; 6246404; 6266829; 6278264; 6278450; 6285307; 6286146; 6287430; 6290449; 6292159; 6296152; 6325390; 6339503; 6344016; 6445564; 6450704; 6573669; 6761551; 6951162; 6993862; 6996702; 7000759; 7002914; 7007128; 7007814; 7008032; 7015808; 7016843; 7035827; 7040939; 7045809; 7494489; 7514589; 7537637; 7685823; 7736587; 7844812; 8047884; 8087855; 8107083; 8248780; 8265357; 8284224; 8377190; 8420002; 8430111; 8431948; 8479900; 8503010; 8521466; 8658176; 8757401; 8830239; 9012661; 9050843; 9077436; 9094712; 9144176; 9182561; 9201947; 9278503; 9305860; 9642176; 9665887; 9702191; 9765211; 9765569; 9790843; 9794753; 9813048; 9843952; 9890901; 9918716; 9922176; 10049799; 10079088; 10198039; 10200263; 10213678; 10369763; 10377392; 10384292; 10449412; 10471732; 10500100; 10625443; 10639128; 10652363; 10741971; 10764785; 10947847; 11118218; 11238372; 11274112; 11278820; 11282466; 11326100; 11439189; 11443089; 11571305; 11600705; 11904365; 11917006; 11976292; 12366844; 12368244; 12370445; 12401787; 12449654; 12484772; 12486015; 12627170; 12730602; 12788950; 12829377; 12834354; 12851391; 12970184; 13704191; 13895983; 14604986; 14622598; 14634670; 14651633; 14759508; 14962387; 14982639; 14988563; 15178453; 15231796; 15351641; 15449955; 15454563; 15469913; 15491604; 15606780; 15626761; 15670592; 15674021; 15680325; 15690043; 15738402; 15780938; 15950164; 16088348; 16123036; 16169843; 16185714; 16204187; 16246367; 16284617; 16301522; 16391237; 16397293; 16405998; 16537373; 16581837; 16621791; 16672600; 16690607; 16707692; 16725156; 16738554; 16846227; 16857589; 16858726; 16876197; 16888625; 16934488; 17012275; 17012380; 17021309; 17086184; 17157257; 17158328; 17187058; 17207814; 17332752; 17456470; 17470797; 17507375; 17552233; 17960736; 18454629; 18957204; 19574956; 19849850; 19903881; 19966797; 21057108; 21435034; 21784927; 23202476; 23852871</obo:OGG_0000000030>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNA polymerase, beta prime subunit</dc:description>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b3988</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tabB</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000948488 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_3000948488">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rpoB</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">948488</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECK3978</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EcoGene:EG10894</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_0005737</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JW3950</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID: 116224; 159290; 321939; 325370; 331076; 351929; 362163; 377281; 387258; 395322; 395323; 396444; 450114; 765746; 765757; 776928; 1095419; 1104862; 1195367; 1281887; 1316869; 1370817; 1384037; 1400337; 1408790; 1522593; 1531224; 1593618; 1593619; 1651394; 1651395; 1660071; 1693014; 1698125; 1702475; 1704005; 1741250; 1745227; 1748664; 1825852; 1835546; 1860856; 1870123; 1925019; 2017366; 2068078; 2192861; 2203338; 2253882; 2259628; 2409292; 2414126; 2439694; 2443706; 2460732; 2464590; 2464690; 2479752; 2482070; 2646283; 2661827; 2664452; 2668539; 2670912; 2671751; 2687277; 2693737; 2722774; 2821285; 2961367; 3016480; 3046946; 3050121; 3050123; 3078109; 3301003; 3308880; 3323831; 3328858; 3528751; 3528752; 3550697; 3881415; 3882710; 3898021; 3960716; 4387741; 4562312; 4571524; 4599760; 4601245; 4612736; 4879326; 4882047; 4896016; 4897821; 4915864; 4943550; 4986890; 5040359; 6091902; 6098691; 6156091; 6158044; 6159577; 6160369; 6165380; 6217295; 6223930; 6246404; 6266829; 6278264; 6285307; 6286146; 6292159; 6296152; 6325390; 6339503; 6344016; 6348484; 6352328; 6374374; 6384732; 6445564; 6450704; 6573669; 6761548; 6761549; 6761551; 6951162; 6993862; 6996702; 7000759; 7002914; 7007128; 7007814; 7008032; 7011900; 7015808; 7016843; 7028161; 7035827; 7040939; 7045809; 7049160; 7493980; 7514589; 7537637; 7543478; 7685823; 7736587; 7844812; 8047884; 8087855; 8106339; 8107083; 8113195; 8248780; 8265357; 8284224; 8377190; 8420002; 8430111; 8431948; 8479900; 8503010; 8521466; 8692922; 8768249; 8830239; 9012661; 9050843; 9094712; 9144176; 9182561; 9201947; 9245594; 9278503; 9305860; 9642176; 9665887; 9680313; 9702191; 9765211; 9765569; 9790843; 9794753; 9843952; 9890901; 9893021; 9918716; 9922176; 10049799; 10050757; 10079088; 10200263; 10213678; 10377392; 10449412; 10471732; 10526237; 10625443; 10639128; 10741971; 10747855; 10947847; 11118218; 11162085; 11238372; 11274112; 11326100; 11571305; 11600705; 11823642; 11904365; 11917006; 12368244; 12370445; 12401787; 12424241; 12484772; 12486015; 12627170; 12713816; 12730602; 12813036; 12829377; 12834354; 12851391; 12946345; 12970184; 13704191; 13895983; 14604986; 14622598; 14634670; 14712731; 14759508; 14962387; 14982639; 14988563; 15090533; 15178453; 15186424; 15449955; 15454563; 15465046; 15466047; 15469913; 15491604; 15574501; 15596728; 15598893; 15606780; 15626761; 15670592; 15674021; 15680325; 15687384; 15738402; 15761057; 15793146; 15805525; 15836776; 15850405; 15950164; 16049026; 16088348; 16169843; 16185714; 16246367; 16276894; 16284617; 16301522; 16391237; 16397293; 16405998; 16469698; 16537373; 16551615; 16581837; 16601684; 16606699; 16621791; 16690607; 16707692; 16738554; 16796685; 16846227; 16857589; 16858726; 16876197; 16888625; 16934488; 17012275; 17012380; 17021309; 17086184; 17157257; 17158328; 17187058; 17207814; 17286098; 17456470; 17470797; 17507375; 17532270; 17917675; 17960736; 18325895; 18388495; 18429818; 18454629; 18701713; 18957204; 19040636; 19574956; 19849850; 19903881; 22157000; 23223236; 23701170</obo:OGG_0000000030>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNA polymerase, beta subunit</dc:description>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b3987</obo:OGG_0000000007>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ftsR</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">groN</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mbrD?</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nitB</obo:IAO_0000118>
+        <obo:OGG_0000000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rif</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ron</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sdgB</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stl</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stv</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tabD</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tabG</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000949083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_3000949083">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lacY</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">949083</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECK0340</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EcoGene:EG10526</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO_0009274; GO_0016052; GO_0019866</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JW0334</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID: 336372; 345098; 1438245; 1542643; 1644770; 1702782; 1710346; 1848449; 2164211; 2173730; 2203471; 3520229; 4578203; 4618246; 4860427; 4870861; 4876923; 4886293; 4896019; 4897462; 4900505; 4914567; 4935786; 4961803; 5327277; 5332199; 5337175; 5338490; 5338856; 5341533; 5541536; 6389133; 6444453; 6986561; 6997269; 7000781; 7028742; 7568098; 7578103; 8202501; 8407799; 8438231; 8662750; 8702996; 8786234; 8787606; 8841135; 8873603; 8919858; 8993343; 8993344; 9159108; 9278503; 9305990; 9391057; 9529885; 9761772; 10097069; 10209753; 10387107; 10485888; 10715113; 10715135; 10741430; 10758173; 10821686; 10943556; 11087408; 11969416; 12374972; 12471022; 12549931; 12578349; 12627968; 12660154; 12718531; 12719218; 12743100; 12885249; 12893935; 12934015; 14503872; 14566061; 14630326; 14973486; 15067017; 15165739; 15165740; 15189056; 15216415; 15272008; 15357303; 15364943; 15461455; 15681202; 15909981; 15919996; 15950162; 16013474; 16049495; 16098656; 16120447; 16263707; 16381841; 16397293; 16446422; 16525509; 16566592; 16574149; 16574153; 16648266; 16689628; 16698795; 16794873; 16842212; 16862137; 17003033; 17172438; 17176050; 17242069; 17251354; 17320103; 17501925; 17703213; 17881559; 17925435; 18319336; 18426771; 18485365; 18567672; 18620422; 18779371; 18848570; 18927393; 19074771; 19128028; 19383792; 19539601; 19595667; 19689129; 19719233; 19781551; 20043916; 20096263; 20457922; 20568736; 20696931; 20875429; 21315728; 21454589; 21593407; 21730060; 21995338; 22106930; 22355148; 22605776; 22969082; 23322771; 23671103; 24152072</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b0343</obo:OGG_0000000007>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lactose permease</dc:description>
+        <obo:OGG_0000000018 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </owl:Class>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </rdf:Description>
+    <rdf:Description>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ogg.owl"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.4.1806) http://owlapi.sourceforge.net -->
+
