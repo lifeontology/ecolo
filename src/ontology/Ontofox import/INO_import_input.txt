@@ -5,6 +5,9 @@ http://purl.obolibrary.org/obo/ecolo/INO_import.owl
 INO
 
 [Low level source term URIs]
+
+http://purl.obolibrary.org/obo/MI_0407 #direct interaction
+
 http://purl.obolibrary.org/obo/INO_0000001 #interaction network
 http://purl.obolibrary.org/obo/INO_0000158 #interaction network model
 includeAllChildren

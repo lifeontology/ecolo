@@ -22,13 +22,13 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;ecolo.owl">
-        <dc:date xml:lang="en">05-05-2018</dc:date>
+        <dc:date xml:lang="en">05-15-2018</dc:date>
         <dc:description xml:lang="en">EcoLO is a formal ontology that represents the life processes of E. coli and related entities and relations. LifO is a general purpose ontology that covers the common features associated with different types of organisms such as unicellular prokaryotes (e.g., E. coli) and multicellular organisms (e.g., humans). </dc:description>
         <rdfs:comment xml:lang="en">EcoLO is based on LifO.</rdfs:comment>
         <dc:title xml:lang="en">EcoLO: E. coli Life Ontology</dc:title>
         <dc:subject xml:lang="en">LifO: An ontology of the life of an E. coli </dc:subject>
         <dc:format xml:lang="en">OWL-DL</dc:format>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.01</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.02</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <owl:imports rdf:resource="&obo;ecolo/BFO_import.owl"/>
         <owl:imports rdf:resource="&obo;ecolo/CHEBI_import.owl"/>
@@ -51,11 +51,352 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EcoLO_0000002 -->
+
+    <owl:ObjectProperty rdf:about="&obo;EcoLO_0000002">
+        <rdfs:label xml:lang="en">sequence followed by</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;RO_0002220"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EcoLO_0000017 -->
+
+    <owl:ObjectProperty rdf:about="&obo;EcoLO_0000017">
+        <rdfs:label xml:lang="en">inhibits</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;RO_0002212"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EcoLO_0000018 -->
+
+    <owl:ObjectProperty rdf:about="&obo;EcoLO_0000018">
+        <rdfs:label xml:lang="en">transcribes</rdfs:label>
+        <obo:IAO_0000115>An object property between a transcription process and a gene where the transcription process has the gene as an input and transcribes the gene to an RNA.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EcoLO_0000019 -->
+
+    <owl:ObjectProperty rdf:about="&obo;EcoLO_0000019">
+        <rdfs:label xml:lang="en">promotes</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;RO_0002213"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EcoLO_0000001 -->
+
+    <owl:Class rdf:about="&obo;EcoLO_0000001">
+        <rdfs:label xml:lang="en">E. coli lac operon</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SO_0000178"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;EcoLO_0000013"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;EcoLO_0000002"/>
+                                <owl:someValuesFrom rdf:resource="&obo;OGG_3000945006"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;EcoGene_EG10527"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;EcoGene_EG10524"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;EcoGene_EG10526"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EcoLO_0000003 -->
+
+    <owl:Class rdf:about="&obo;EcoLO_0000003">
+        <rdfs:label xml:lang="en">molecular binding</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MI_0407"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EcoLO_0000004 -->
+
+    <owl:Class rdf:about="&obo;EcoLO_0000004">
+        <rdfs:label xml:lang="en">E. coli allolactose-LacI binding</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EcoLO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002233"/>
+                <owl:someValuesFrom rdf:resource="&obo;CHEBI_36229"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002233"/>
+                <owl:someValuesFrom rdf:resource="&obo;PR_P03023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002234"/>
+                <owl:someValuesFrom rdf:resource="&obo;EcoLO_0000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EcoLO_0000005 -->
+
+    <owl:Class rdf:about="&obo;EcoLO_0000005">
+        <rdfs:label xml:lang="en">E. coli LacI-lacO binding</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EcoLO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002233"/>
+                <owl:someValuesFrom rdf:resource="&obo;PR_P03023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002233"/>
+                <owl:someValuesFrom rdf:resource="&obo;EcoLO_0000013"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;EcoLO_0000017"/>
+                <owl:someValuesFrom rdf:resource="&obo;EcoLO_0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EcoLO_0000006 -->
+
+    <owl:Class rdf:about="&obo;EcoLO_0000006">
+        <rdfs:label xml:lang="en">E. coli CAP-cAMP binding</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EcoLO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002233"/>
+                <owl:someValuesFrom rdf:resource="&obo;PR_000022333"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002233"/>
+                <owl:someValuesFrom rdf:resource="&obo;CHEBI_17489"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002234"/>
+                <owl:someValuesFrom rdf:resource="&obo;EcoLO_0000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EcoLO_0000007 -->
+
+    <owl:Class rdf:about="&obo;EcoLO_0000007">
+        <rdfs:label xml:lang="en">binding of E. coli cAMP, CAP, and CAP binding site</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;EcoLO_0000003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002233"/>
+                <owl:someValuesFrom rdf:resource="&obo;EcoLO_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002233"/>
+                <owl:someValuesFrom rdf:resource="&obo;CHEBI_17489"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002233"/>
+                <owl:someValuesFrom rdf:resource="&obo;PR_000022333"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;EcoLO_0000019"/>
+                <owl:someValuesFrom rdf:resource="&obo;EcoLO_0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EcoLO_0000008 -->
+
+    <owl:Class rdf:about="&obo;EcoLO_0000008">
+        <rdfs:label xml:lang="en">E. coli molecular complex</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CHEBI_23367"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EcoLO_0000009 -->
+
+    <owl:Class rdf:about="&obo;EcoLO_0000009">
+        <rdfs:label xml:lang="en">E. coli CAP-cAMP complex</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;EcoLO_0000008"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="&obo;CHEBI_17489"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="&obo;PR_000022333"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;EcoLO_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;CHEBI_17489"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002233"/>
+                <owl:someValuesFrom rdf:resource="&obo;PR_000022333"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EcoLO_0000012 -->
+
+    <owl:Class rdf:about="&obo;EcoLO_0000012">
+        <rdfs:label xml:lang="en">E. coli allolactose-LacI complex</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;EcoLO_0000008"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="&obo;CHEBI_36229"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="&obo;PR_P03023"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;EcoLO_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;CHEBI_36229"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;PR_P03023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EcoLO_0000013 -->
+
+    <owl:Class rdf:about="&obo;EcoLO_0000013">
+        <rdfs:label xml:lang="en">E. coli lacO</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SO_0000057"/>
+        <obo:IAO_0000115>An operator that is able to bind E. coli LacI repressor protein and then prevents the transcription of E. coli lac operon.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EcoLO_0000015 -->
+
+    <owl:Class rdf:about="&obo;EcoLO_0000015">
+        <rdfs:label xml:lang="en">E. coli CAP binding site</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SO_0001679"/>
+        <obo:IAO_0000115>A transcriptoin regulatory region that is a sequence in E. coli that binds to the CAP protein.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EcoLO_0000016 -->
+
+    <owl:Class rdf:about="&obo;EcoLO_0000016">
+        <rdfs:label xml:lang="en">E. coli lac operon transcription</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;INO_0000157"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;EcoLO_0000018"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000945674"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;EcoLO_0000018"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000945006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;EcoLO_0000018"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000949083"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 

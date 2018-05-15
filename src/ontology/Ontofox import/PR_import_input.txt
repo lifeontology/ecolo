@@ -17,6 +17,14 @@ http://purl.obolibrary.org/obo/PR_P0A8T7 #Ec-rpoC
 http://purl.obolibrary.org/obo/PR_P0A800 #Ec-rpoZ
 http://purl.obolibrary.org/obo/PR_P00579 #Ec-rpoD
 http://purl.obolibrary.org/obo/GO_0030880 #RNA polymerase complex
+http://purl.obolibrary.org/obo/PR_000022333 #CRP, catabolite gene activator, cAMP receptor protein
+
+http://purl.obolibrary.org/obo/PR_P03023 #lactose operon repressor (Escherichia coli K-12) 
+http://purl.obolibrary.org/obo/PR_P0ACJ8 #cAMP receptor protein (Escherichia coli K-12)
+
+
+# http://purl.obolibrary.org/obo/EcoGene_EG10525 #lacI (Escherichia coli K-12)
+
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/PR_000000001 #protein

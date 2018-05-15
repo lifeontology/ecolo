@@ -9,7 +9,13 @@ http://purl.obolibrary.org/obo/RO_0002233 #has input
 http://purl.obolibrary.org/obo/RO_0002234 #has output
 http://purl.obolibrary.org/obo/BFO_0000066 #occurs in 
 
+http://purl.obolibrary.org/obo/RO_0002163 #spatially disjoint from
+includeAllChildren
+
 http://purl.obolibrary.org/obo/RO_0002222 #temporallly related to
+includeAllChildren
+
+http://purl.obolibrary.org/obo/RO_0002131 #overlaps
 includeAllChildren
 
 [Top level source term URIs and target direct superclass URIs]
