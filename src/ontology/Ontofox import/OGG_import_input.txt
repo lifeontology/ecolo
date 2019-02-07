@@ -30,6 +30,14 @@ http://purl.obolibrary.org/obo/OGG_1000001236 #genome of Gammaproteobacteria
 http://purl.obolibrary.org/obo/OGG_1000001224 #genome of Proteobacteria
 http://purl.obolibrary.org/obo/OGG_0000000010 #protein-coding gene disposion
 
+http://purl.obolibrary.org/obo/OGG_3000947272 # EnvZ， sensory histidine kinase in two-component regulatory system with OmpR 
+http://purl.obolibrary.org/obo/OGG_3000947913 # ompR， DNA-binding response regulator in two-component regulatory system with EnvZ
+http://purl.obolibrary.org/obo/OGG_3000946844 # hybrid sensory histidine kinase in two-component regulatory system with EvgA
+http://purl.obolibrary.org/obo/OGG_3000946400 # cheW, purine-binding chemotaxis protein
+http://purl.obolibrary.org/obo/OGG_3000946401 # cheA, fused chemotactic sensory histidine kinase in two-component regulatory system with CheB and CheY: sensory histidine kinase/signal sensing protein
+http://purl.obolibrary.org/obo/OGG_3000946394 # cheB, fused chemotaxis regulator: protein-glutamate methylesterase in two-component regulatory system with CheA
+http://purl.obolibrary.org/obo/OGG_3000946393 #cheY, chemotaxis regulator transmitting signal to flagellar motor component
+
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 
