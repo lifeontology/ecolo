@@ -1,4 +1,7 @@
 # ecolo
-EcoLO: an Escherichia coli Life Ontology developed based on LifO to represent the life of a representative E. coli
+EcoLO: The Escherichia coli Life Ontology
 
-EcoLO is initially developed to represent the E. coli lacZ regulation model.  
+EcoLO was initially developed to represent the E. coli lacZ regulation model.
+
+EcoLO is developed by extending the Life Ontology (LifO), a general purpose species-neural upper level ontology of life. Like LifO, the EcoLO developed is based on the OneNet Theory of Life: http://www.hegroup.org/onenettheory.html.  
+
