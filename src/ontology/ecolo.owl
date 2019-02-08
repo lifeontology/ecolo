@@ -68,6 +68,28 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/EcoLO_0000010 -->
+
+    <owl:ObjectProperty rdf:about="&obo;EcoLO_0000010">
+        <rdfs:label xml:lang="en">promoted by</rdfs:label>
+        <rdfs:comment>An inverse of the relation &apos;promotes&apos;</rdfs:comment>
+        <owl:inverseOf rdf:resource="&obo;EcoLO_0000019"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;RO_0002336"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EcoLO_0000011 -->
+
+    <owl:ObjectProperty rdf:about="&obo;EcoLO_0000011">
+        <rdfs:label xml:lang="en">inhibited by</rdfs:label>
+        <rdfs:comment>An inverse of the relation &apos;inhibits&apos;.</rdfs:comment>
+        <owl:inverseOf rdf:resource="&obo;EcoLO_0000017"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;RO_0002335"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/EcoLO_0000017 -->
 
     <owl:ObjectProperty rdf:about="&obo;EcoLO_0000017">
@@ -114,12 +136,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;EcoGene_EG10524"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;EcoGene_EG10526"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -127,6 +143,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;EcoGene_EG10527"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;EcoGene_EG10524"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -165,12 +187,6 @@
         <rdfs:subClassOf rdf:resource="&obo;EcoLO_0000003"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002233"/>
-                <owl:someValuesFrom rdf:resource="&obo;CHEBI_36229"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002234"/>
                 <owl:someValuesFrom rdf:resource="&obo;EcoLO_0000012"/>
             </owl:Restriction>
@@ -179,6 +195,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002233"/>
                 <owl:someValuesFrom rdf:resource="&obo;PR_P03023"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002233"/>
+                <owl:someValuesFrom rdf:resource="&obo;CHEBI_36229"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -193,7 +215,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002233"/>
-                <owl:someValuesFrom rdf:resource="&obo;PR_P03023"/>
+                <owl:someValuesFrom rdf:resource="&obo;EcoLO_0000013"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -205,7 +227,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002233"/>
-                <owl:someValuesFrom rdf:resource="&obo;EcoLO_0000013"/>
+                <owl:someValuesFrom rdf:resource="&obo;PR_P03023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -220,12 +242,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002233"/>
-                <owl:someValuesFrom rdf:resource="&obo;CHEBI_17489"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002233"/>
                 <owl:someValuesFrom rdf:resource="&obo;PR_000022333"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -233,6 +249,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002234"/>
                 <owl:someValuesFrom rdf:resource="&obo;EcoLO_0000009"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002233"/>
+                <owl:someValuesFrom rdf:resource="&obo;CHEBI_17489"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -247,7 +269,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002233"/>
-                <owl:someValuesFrom rdf:resource="&obo;PR_000022333"/>
+                <owl:someValuesFrom rdf:resource="&obo;CHEBI_17489"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -265,7 +287,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002233"/>
-                <owl:someValuesFrom rdf:resource="&obo;CHEBI_17489"/>
+                <owl:someValuesFrom rdf:resource="&obo;PR_000022333"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -380,20 +402,32 @@
         <rdfs:subClassOf rdf:resource="&obo;INO_0000157"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;EcoLO_0000018"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGG_3000949083"/>
+                <owl:onProperty rdf:resource="&obo;EcoLO_0000010"/>
+                <owl:someValuesFrom rdf:resource="&obo;EcoLO_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;EcoLO_0000018"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGG_3000945674"/>
+                <owl:someValuesFrom rdf:resource="&obo;EcoGene_EG10524"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;EcoLO_0000018"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGG_3000945006"/>
+                <owl:someValuesFrom rdf:resource="&obo;EcoGene_EG10527"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;EcoLO_0000011"/>
+                <owl:someValuesFrom rdf:resource="&obo;EcoLO_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;EcoLO_0000018"/>
+                <owl:someValuesFrom rdf:resource="&obo;EcoGene_EG10526"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
